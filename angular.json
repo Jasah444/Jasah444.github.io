@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mycv": {
+    "myCV": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mycv",
+            "outputPath": "dist/my-cv",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mycv:build:production"
+              "browserTarget": "myCV:build:production"
             },
             "development": {
-              "browserTarget": "mycv:build:development"
+              "browserTarget": "myCV:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mycv:build"
+            "browserTarget": "myCV:build"
           }
         },
         "test": {
@@ -95,8 +95,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "1980135c-4700-4d6d-b40b-d2ed9f2585a7"
   }
 }
